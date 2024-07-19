@@ -12,7 +12,6 @@ async function bootstrap() {
     .setDescription('Todo API By Vijayendher Gatla')
     .setVersion('1.0')
     .addBearerAuth()
-    .addTag('todos')
     .build();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('/swagger', app, document, {

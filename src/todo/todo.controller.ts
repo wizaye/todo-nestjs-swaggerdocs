@@ -5,7 +5,7 @@ import { UpdateTodoDto } from './dto/update-todo.dto';
 import { JwtAuthGuard } from '../auth/auth.guard';
 import { UserEmail } from '../common/decorators/user-email.decorators';
 import { ApiTags,ApiOperation, ApiBearerAuth} from '@nestjs/swagger';
-@ApiTags('Too')
+@ApiTags('Todo')
 @Controller('todo')
 export class TodoController {
   constructor(private readonly todoService: TodoService) {}
